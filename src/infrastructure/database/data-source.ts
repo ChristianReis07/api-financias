@@ -1,6 +1,8 @@
 import { DataSource } from "typeorm";
 import dotenv from "dotenv";
 import { Conta } from "../../domain/entities/Conta";
+import { Categoria } from "../../domain/entities/Categoria";
+
 
 dotenv.config();
 
@@ -14,5 +16,9 @@ export const AppDataSource = new DataSource({
   database: process.env.DB_NAME,
   synchronize: true,
   logging: true,
-  entities: [Conta],
+  entities: [
+    Conta,
+    Categoria
+    
+  ],
 });
