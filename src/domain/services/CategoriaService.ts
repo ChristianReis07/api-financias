@@ -1,5 +1,5 @@
 import { AppDataSource } from "../../infrastructure/database/data-source";
-import { CategoriaResponseDTO } from "../../interfaces/CategoriaResponseDTO";
+import { CategoriaResponseDTO } from "../../interfaces/dtos/CategoriaResponseDTO";
 import { Categoria } from "../entities/Categoria";
 
 export class CategoriaService {
